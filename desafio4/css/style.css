@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: "Wordle";
+    src: url("../fonts/karnakcondensed-normal-700.woff") format("woff");
+}
+
+.nav-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    padding: 0px 20px;
+    height: 65px;
+    color: #000000;
+    border-bottom: 1px solid #d3d6da;
+}
+
+.item-left {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 120px;
+}
+
+.menu-icon {
+    width: 24px;
+    height: 24px;
+    padding-right: 12px;
+}
+
+.help-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.statistics-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.settings-icon {
+    width: 24px;
+    height: 24px;
+    padding-left: 12px;
+}
+
+.wordle-ft {
+    font-family: "Wordle";
+    color: #000000;
+    font-size: 36px;
+    font-weight: 700;
+    flex-grow: 2;
+    text-align: center;
+    letter-spacing: 0.01em;
+    pointer-events: none;
+    position: relative;
+}
+
+.item-right {
+    display: flex;
+    width: 120px;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.app-game {
+    display: flex;
+    width: 100%;
+    max-width: 500px;
+    height: calc(100% - 65px);
+    margin: 0 auto;
+    flex-direction: column;
+}
+
+.boxes {
+    height: 674px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    overflow: hidden;
+}
+
+.box-grid-height {
+    width: 350px;
+    height: 420px;
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    grid-gap: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.box-grid-width {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 5px;
+}
+
+.box-item {
+    color: #ffffff;
+    font-family: 'Clear Sans', 'Helvetica Neue', Arial, sans-serif;
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    line-height: 2rem;
+    font-weight: bold;
+    vertical-align: middle;
+    box-sizing: border-box;
+    text-transform: uppercase;
+}
+
+.empty {
+    border: 2px solid #d3d6da;
+}
+
+.correct {
+    background: #6AAA64;
+}
+
+.contain {
+    background: #C9B458;
+}
+
+.wrong {
+    background: #787C7E;
+}
+
+.key-color {
+    background: #d3d6da;;
+}
+
+.keyboard {
+    height: 200px;
+    margin: 0 8px;
+    overflow: hidden;
+}
+
+.keyboard-row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 0 auto 8px;
+}
+
+.keyboard-key {
+    display: flex;
+    flex: 1;
+    font-family: 'Clear Sans', 'Helvetica Neue', Arial, sans-serif;
+    font-weight: bold;
+    height: 58px;
+    width: 20px;
+    margin: 0 6px 0 0;
+    padding: 0;
+    border: 0;
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.keyboard-spacer {
+    flex: 0.5;
+}
+
+.key-enter {
+    flex: 1.5;
+    font-size: 12px;
+}
+
+.key-backspace {
+    flex: 1.5;
+    font-size: 12px;
+}

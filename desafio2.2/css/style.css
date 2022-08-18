@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  margin: 0 450px;
+}
+
+.cabecalho {
+  margin-top: 30px;
+  background-color: #ffffff;
+  display: block;
+  padding: 20px 0 20px 0;
+}
+
+.cabecalho-navbar ul{
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  justify-content: end;
+}
+
+
+.cabecalho-texto {
+  margin-left: 40px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 22px;
+  color: #293651;
+}
+
+.cabecalho-texto:hover {
+  padding-bottom: 5px;
+  border-bottom: solid #09b99f;
+  border-width: 5px;
+}
+
+.sticky {
+  z-index: 99;
+  position: sticky;
+  top: 0px;
+  border-bottom: solid;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: end;
+  justify-items: center;
+}
+
+.apresentacao {
+  margin-top: 50px
+}
+
+.apresentacao-ola{
+  margin-bottom: 25px;
+  color: #09b99f;
+  font-weight: normal;
+  font-size: 26px;
+  letter-spacing: 3px;
+}
+
+.apresentacao-nome {
+  margin-bottom: 25px;
+  font-weight: bold;
+  font-size: 38px;
+  color: #293651;
+}
+
+.apresentacao-profissional {
+  margin-bottom: 25px;
+  color: #293651;
+  font-weight: normal;
+  font-size: 26px;
+  letter-spacing: 3px;
+}
+
+.apresentacao-especialista {
+  margin-bottom: 37.5px;
+  color: #757575;
+  font-weight: normal;
+  font-size: 21px;
+  text-align: justify;
+}
+
+.btn_info {
+  margin-bottom: 37.5px;
+}
+
+.btn_info a {
+  padding: 12px 40px;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: normal;
+  color: white;
+  background: #09b99f;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+}
+
+.img-hero {
+  display: flex;
+  justify-content: center;
+  height: 557px;
+}
+
+.separacao {
+  margin: 75px 300px 0 300px;
+  border: 3px solid #293651;
+  border-radius: 5px;
+  opacity: 80%;
+}
+
+.projetos {
+  padding-top: 75px;
+  display: block;
+}
+
